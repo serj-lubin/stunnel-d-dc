@@ -9,4 +9,5 @@ services:
       STUNNEL_SERVICE: smpp
 
     ports:
-      - "3801:3800"
+      - "3800:3800"
+    restart: unless-stopped
