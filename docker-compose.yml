@@ -3,11 +3,11 @@ services:
   stunnel:
     image: dweomer/stunnel
     environment:
-      STUNNEL_CLIENT: yes
-      STUNNEL_ACCEPT: 0.0.0.0:3800
-      STUNNEL_CONNECT: smpp.marketolog.mts.ru:3800
-      STUNNEL_SERVICE: smpp
+      - STUNNEL_CLIENT: yes
+      - STUNNEL_ACCEPT: 0.0.0.0:3800
+      - STUNNEL_CONNECT: smpp.marketolog.mts.ru:3800
+      - STUNNEL_SERVICE: smpp
 
     ports:
-      - "3800:3800"
+      - "3801:3800"
     restart: unless-stopped
